@@ -6,7 +6,9 @@
 
 It’s the “engine room” of the broader ship:
 > **barnacles** – general notes & sketches
+
 > **boilers** – deep learning systems and implementations
+
 > **compass** – reinforcement learning & navigation
 
 ---
