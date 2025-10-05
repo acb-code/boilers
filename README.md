@@ -2,9 +2,9 @@
 
 **boilers** is a personal deep learning workshop — a collection of modular implementations, experiments, and blog-style notebooks exploring topics in modern neural networks, optimization, and representation learning.
 
-It’s the “engine room” of the broader ship:  
-> **barnacles** – general notes & sketches  
-> **boilers** – deep learning systems and implementations  
+It’s the “engine room” of the broader ship:
+> **barnacles** – general notes & sketches
+> **boilers** – deep learning systems and implementations
 > **compass** – reinforcement learning & navigation
 
 ---
@@ -73,6 +73,52 @@ pip install -e ".[dev]"
 pip install -e .
 
 # 4. Open a nb and start
+```
+
+## Tests
+Run the tests created and placed in the tests directory automatically with:
+```bash
+pytest -q
+```
+
+## 🧹 Code Formatting & Pre-Commit Hooks
+
+This repository uses [pre-commit](https://pre-commit.com/) to keep code clean and consistent.
+
+Install and activate hooks once:
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+### 🛠 Using the Makefile
+
+Common tasks are wrapped in a Makefile so you don’t need to remember long commands.
+
+```bash
+# See available targets
+make help
+
+# Install dev dependencies + local package (editable)
+make dev
+
+# Run unit tests
+make test
+
+# Lint without changing files
+make lint
+
+# Auto-format code (Ruff fix, Black, isort)
+make fmt
+
+# Launch JupyterLab from the project root
+make lab
+
+# Clean caches and build artifacts
+make clean
+
+# Install pre-commit hooks and run them on all files once
+make precommit
 ```
 
 # References

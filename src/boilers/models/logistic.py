@@ -1,5 +1,5 @@
-import torch
 import torch.nn as nn
+
 
 class LogisticClassifier(nn.Module):
     def __init__(self, in_features: int, num_classes: int = 2):

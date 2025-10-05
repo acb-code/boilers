@@ -1,9 +1,9 @@
-from typing import Tuple, Dict
 import torch
-from torch.utils.data import DataLoader, TensorDataset
 from sklearn.datasets import make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from torch.utils.data import DataLoader, TensorDataset
+
 
 def moons(batch_size=128, n_samples=4000, noise=0.2):
     X, y = make_moons(n_samples=n_samples, noise=noise)
@@ -16,5 +16,5 @@ def moons(batch_size=128, n_samples=4000, noise=0.2):
     return (
         DataLoader(tr, batch_size=batch_size, shuffle=True),
         DataLoader(val, batch_size=batch_size),
-        {"input_dim": 2, "num_classes": 2}
+        {"input_dim": 2, "num_classes": 2},
     )
