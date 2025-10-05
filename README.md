@@ -24,8 +24,7 @@ It’s the “engine room” of the broader ship:
 ---
 
 ## Notebooks
-#### 01 – Linear & Logistic Regression
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+#### 01 – Linear & Logistic Regression [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/acb-code/boilers/blob/main/notebooks/2025-10-05-intro/01_linear_logistic_mlp.ipynb
 )
 
