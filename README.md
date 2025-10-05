@@ -121,5 +121,17 @@ make clean
 make precommit
 ```
 
+### 🧹 Pre-commit usage
+
+First run will usually reformat files and exit non-zero (that’s expected).
+
+```bash
+# Run hooks on the full repo
+make precommit
+# If files were modified:
+git add -A
+make precommit     # should pass clean now
+```
+
 # References
 “Concepts and some exercises inspired by Understanding Deep Learning (S.J.D. Prince).”.
