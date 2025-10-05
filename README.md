@@ -1,4 +1,6 @@
 # 🫧 boilers
+![CI](https://github.com/acb-code/boilers/actions/workflows/ci.yml/badge.svg)
+
 
 **boilers** is a personal deep learning workshop — a collection of modular implementations, experiments, and blog-style notebooks exploring topics in modern neural networks, optimization, and representation learning.
 
