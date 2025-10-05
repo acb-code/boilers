@@ -1,0 +1,44 @@
+# Core DL framework
+torch>=2.2
+torchvision>=0.17
+
+# Scientific stack
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+
+# Plotting & visualization
+matplotlib>=3.9
+seaborn>=0.13
+tqdm>=4.66
+
+# Notebook environment
+jupyterlab>=4.2
+ipykernel>=6.29
+nbformat>=5.10
+notebook>=7.2
+
+# Configs & experiment organization
+pyyaml>=6.0
+omegaconf>=2.3
+
+# Reproducibility & logging
+rich>=13.7
+hydra-core>=1.3
+tensorboard>=2.16
+
+# Developer quality of life
+black>=24.3
+ruff>=0.5
+isort>=5.13
+pytest>=8.2
+nbstripout>=0.7
+
+# Optional helpers
+plotly>=5.20
+sciki
+
+# Optional extras
+wandb>=0.17        # experiment tracking
+albumentations>=1.4 # data augmentation
+gradio>=4.0         # quick model demos
