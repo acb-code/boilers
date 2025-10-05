@@ -58,3 +58,12 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.ruff]
+line-length = 100
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+# Ignore E402 & E702 in notebooks only
+per-file-ignores = { "notebooks/**.ipynb" = ["E402", "E702"] }
