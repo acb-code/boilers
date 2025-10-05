@@ -74,3 +74,6 @@ pip install -e .
 
 # 4. Open a nb and start
 ```
+
+# References
+“Concepts and some exercises inspired by Understanding Deep Learning (S.J.D. Prince).”.
