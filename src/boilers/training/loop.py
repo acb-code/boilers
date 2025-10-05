@@ -35,7 +35,7 @@ def fit(
     device = cfg.device
     model.to(device)
     opt = make_optimizer(model, cfg)
-    history = {"train_loss": [], "val_loss": []}
+    history = {"train_loss": [], "val_loss": [], "val_acc": []}
 
     for epoch in range(cfg.epochs):
         model.train()
@@ -68,6 +68,7 @@ def fit(
         val_acc = correct / len(val_dl.dataset)
         history["train_loss"].append(train_loss)
         history["val_loss"].append(val_loss)
+        history["val_acc"].append(val_acc)
         print(
             f"epoch {epoch+1:02d} | train {train_loss:.4f} | val {val_loss:.4f} | acc {val_acc:.3f}"
         )
