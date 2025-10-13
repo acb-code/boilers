@@ -9,7 +9,7 @@ It’s the “engine room” of the broader ship:
 
 > **boilers** – deep learning systems and implementations
 
-> **compass** – reinforcement learning & navigation
+> **nautilus** – reinforcement learning & navigation
 
 ---
 
